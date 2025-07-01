@@ -53,7 +53,7 @@ When a program is launched with ```start``` for the first time, a directory name
 - ```application.log```: contains the program output.
 - ```execution.log```: contains various information about the program and its execution.
 - ```coordinator.log```: contains the coordaintor output.
-- ```dmtcp.config```: contains the dmtcp configuration set.
+- ```dmtcp.config```: contains the DMTCP configuration set.
 
 If a program is launched with ```start```, but a directory with that name already exists, the program will not start. (We assume that a checkpoint already exists, so restart shoul be used instead).
 
@@ -71,6 +71,17 @@ Please note that the python arguments must be the same used in the start command
 
 
 ## Project structure
+This repository contains:
+
+- ```checkpoint.sh```: the checkpoint/restore script.
+- ```src```: contains the files used to run the tests, with additional debugging information. See the READ.me file.
+- ```Results```: contains the results of the previous tests performed on the Leonardo cluster of CINECA. Additional information can be found in 
 
 
 ## Limitations
+The DMTCP tool presents some limitations:
+
+1) The tool does not checkpoint applications and libraries that work with GPUs (e.g. torch).
+2) Some libraries compiled with Cython have conflicts with dmtcp.
+3) We did not manage to test the checkpoint/restore mechanism on the cluster due to the limited execution time of the models we experimented with.
+4) The DMTCP developers suggest to use the [MANA](https://mana-doc.readthedocs.io/en/latest/) plugin to handle MPI workloads, but we did not manage to install it on Leonardo. 
