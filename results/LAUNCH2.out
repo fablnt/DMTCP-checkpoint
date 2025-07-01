@@ -1,0 +1,54 @@
+>>> Script started
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> Starting imports...
+>>> Imported BaseCBFRecommender
+>>> Imported Evaluator
+>>> Imported Movielens1MReader
+>>> Imported DataSplitter_leave_k_out
+>>> Imported Incremental_Training_Early_Stopping
+Tensorflow is not available
+>>> Imported Recommender_import_list
+ending imports
+>>> entering __main__
+>>> inside main()
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> PID = 378210
+>>> Parent PID = 378195
+>>> ENV PATH = /leonardo_work/IscrC_DMG4RS/checkpointing/RecSysFramework_public/.condaenv/bin:/leonardo/prod/spack/5.2/install/0.21/linux-rhel8-icelake/gcc-8.5.0/anaconda3-2023.09-0-zcre7pfofz45c3btxpdk5zvcicdq5evx/bin:/leonardo/home/userexternal/flentini/.local/bin:/leonardo/home/userexternal/flentini/bin:/cineca/bin:/leonardo/prod/opt/tools/cintools/1.0/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+>>> ENV LD_PRELOAD = None
+>>> Starting at 2025-06-29 11:16:32
+DataSplitter_leave_k_out: Cold users not allowed
+DataSplitter_leave_k_out: Verifying data consistency...
+DataSplitter_leave_k_out: Verifying data consistency... Passed!
+DataSplitter_leave_k_out: DataReader: Movielens1M
+	Num items: 3883
+	Num users: 6040
+	Train 		interactions 976049, 	density 4.16E-02
+	Validation 	interactions 12080, 	density 5.15E-04
+	Test 		interactions 12080, 	density 5.15E-04
+
+
+
+	ICM name: ICM_genres, Num features: 18, feature occurrences: 6408, density 9.17E-02
+	ICM name: ICM_year, Num features: 1, feature occurrences: 3883, density 1.00E+00
+	UCM name: UCM_all, Num features: 3469, feature occurrences: 24160, density 1.15E-03
+
+
+DataSplitter_leave_k_out: Done.
+P3alphaRecommender: URM Detected 183 ( 4.7%) items with no interactions.
+P3alphaRecommender: Similarity column 3883 (100.0%), 3181.16 column/sec. Elapsed time 1.22 sec
+EvaluatorHoldout: Processed 6040 (100.0%) in 1.59 sec. Users per second: 3802
+EvaluatorNegativeItemSample: Processed 6040 (100.0%) in 2.93 sec. Users per second: 2060
+P3alphaRecommender: Saving model in file './result_experiments/__temp_model/P3alphaRecommender/temp_model'
+P3alphaRecommender: Saving complete
+P3alphaRecommender: URM Detected 183 ( 4.7%) items with no interactions.
+P3alphaRecommender: Loading model from file './result_experiments/__temp_model/P3alphaRecommender/temp_model'
+P3alphaRecommender: Loading complete
+EvaluatorHoldout: Processed 6040 (100.0%) in 1.64 sec. Users per second: 3673
+CUTOFF: 5 - PRECISION: 0.0486093, PRECISION_RECALL_MIN_DEN: 0.1215232, RECALL: 0.1215232, MAP: 0.0278493, MAP_MIN_DEN: 0.0696233, MRR: 0.1305933, NDCG: 0.1060852, F1: 0.0694418, HIT_RATE: 0.2283113, ARHR_ALL_HITS: 0.1349200, NOVELTY: 0.0116975, AVERAGE_POPULARITY: 0.5915406, DIVERSITY_MEAN_INTER_LIST: 0.9218004, DIVERSITY_HERFINDAHL: 0.9843296, COVERAGE_ITEM: 0.1231007, COVERAGE_ITEM_HIT: 0.0656709, ITEMS_IN_GT: 0.5791913, COVERAGE_USER: 1.0000000, COVERAGE_USER_HIT: 0.2283113, USERS_IN_GT: 1.0000000, DIVERSITY_GINI: 0.0250441, SHANNON_ENTROPY: 6.8813591, RATIO_DIVERSITY_HERFINDAHL: 0.9851270, RATIO_DIVERSITY_GINI: 0.0713264, RATIO_SHANNON_ENTROPY: 0.6359974, RATIO_AVERAGE_POPULARITY: 2.0917632, RATIO_NOVELTY: 0.0259780, 
+
+CUTOFF: 5 - PRECISION: 0.0486093, PRECISION_RECALL_MIN_DEN: 0.1215232, RECALL: 0.1215232, MAP: 0.0278493, MAP_MIN_DEN: 0.0696233, MRR: 0.1305933, NDCG: 0.1060852, F1: 0.0694418, HIT_RATE: 0.2283113, ARHR_ALL_HITS: 0.1349200, NOVELTY: 0.0116975, AVERAGE_POPULARITY: 0.5915406, DIVERSITY_MEAN_INTER_LIST: 0.9218004, DIVERSITY_HERFINDAHL: 0.9843296, COVERAGE_ITEM: 0.1231007, COVERAGE_ITEM_HIT: 0.0656709, ITEMS_IN_GT: 0.5791913, COVERAGE_USER: 1.0000000, COVERAGE_USER_HIT: 0.2283113, USERS_IN_GT: 1.0000000, DIVERSITY_GINI: 0.0250441, SHANNON_ENTROPY: 6.8813591, RATIO_DIVERSITY_HERFINDAHL: 0.9851270, RATIO_DIVERSITY_GINI: 0.0713264, RATIO_SHANNON_ENTROPY: 0.6359974, RATIO_AVERAGE_POPULARITY: 2.0917632, RATIO_NOVELTY: 0.0259780, 
+
+>>> Script finished

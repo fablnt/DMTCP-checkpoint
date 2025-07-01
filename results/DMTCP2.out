@@ -1,0 +1,10 @@
+Coordinator started, launching client...
+>>> Script started
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> Starting imports...
+>>> Imported BaseCBFRecommender
+>>> Imported Evaluator
+>>> Imported Movielens1MReader
+>>> Imported DataSplitter_leave_k_out
+>>> Imported Incremental_Training_Early_Stopping

@@ -1,0 +1,91 @@
+Coordinator started, launching client...
+>>> Script started
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> Starting imports...
+>>> Imported BaseCBFRecommender
+>>> Imported Evaluator
+>>> Imported Movielens1MReader
+>>> Imported DataSplitter_leave_k_out
+>>> Imported Incremental_Training_Early_Stopping
+Importing Non-Personalized Recommenders...
+Non-Personalized Recommenders imported successfully.
+Importing UserKNN CF...
+UserKNN CF imported.
+Importing ItemKNN CF...
+ItemKNN CF imported.
+Importing NegHOSLIM Recommenders...
+NegHOSLIM Recommenders imported.
+Importing SLIM BPR Cython...
+SLIM BPR Cython imported.
+Importing SLIM ElasticNet...
+SLIM ElasticNet imported.
+Importing P3alpha...
+P3alpha imported.
+Importing RP3beta...
+RP3beta imported.
+Importing GraphFilterCF...
+GraphFilterCF imported.
+Importing ItemRank Recommenders...
+ItemRank Recommenders imported.
+Importing Matrix Factorization (Cython)...
+Matrix Factorization (Cython) imported.
+Importing PureSVD...
+PureSVD imported.
+Importing IALS Recommender...
+IALS Recommender imported.
+Importing NMF Recommender...
+NMF Recommender imported.
+Importing EASE_R...
+EASE_R imported.
+Importing MultVAE...
+Tensorflow is not available
+MultVAE imported.
+Importing ItemKNNCBF...
+ItemKNNCBF imported.
+Importing UserKNNCBF...
+UserKNNCBF imported.
+Importing ItemKNN CFCBF Hybrid...
+ItemKNN CFCBF Hybrid imported.
+Importing UserKNN CFCBF Hybrid...
+UserKNN CFCBF Hybrid imported.
+>>> Imported Recommender_import_list
+ending imports
+>>> entering __main__
+>>> inside main()
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> PID = 40000
+>>> Parent PID = 119195
+>>> ENV PATH = /leonardo_work/IscrC_DMG4RS/checkpointing/RecSysFramework_public/.condaenv/bin:/leonardo/prod/spack/5.2/install/0.21/linux-rhel8-icelake/gcc-8.5.0/anaconda3-2023.09-0-zcre7pfofz45c3btxpdk5zvcicdq5evx/bin:/leonardo/home/userexternal/flentini/.local/bin:/leonardo/home/userexternal/flentini/bin:/cineca/bin:/leonardo/prod/opt/tools/cintools/1.0/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+>>> ENV LD_PRELOAD = 
+>>> Starting at 2025-06-24 05:47:18
+DataSplitter_leave_k_out: Cold users not allowed
+DataSplitter_leave_k_out: Verifying data consistency...
+DataSplitter_leave_k_out: Verifying data consistency... Passed!
+DataSplitter_leave_k_out: DataReader: Movielens1M
+	Num items: 3883
+	Num users: 6040
+	Train 		interactions 976049, 	density 4.16E-02
+	Validation 	interactions 12080, 	density 5.15E-04
+	Test 		interactions 12080, 	density 5.15E-04
+
+
+
+	ICM name: ICM_genres, Num features: 18, feature occurrences: 6408, density 9.17E-02
+	ICM name: ICM_year, Num features: 1, feature occurrences: 3883, density 1.00E+00
+	UCM name: UCM_all, Num features: 3469, feature occurrences: 24160, density 1.15E-03
+
+
+DataSplitter_leave_k_out: Done.
+MatrixFactorization_BPR_Cython_Recommender: URM Detected 183 ( 4.7%) items with no interactions.
+MF_BPR: Processed 7000 (100.0%) in 0.24 sec. MSE loss 1.97E-03. Sample per second: 29551
+MF_BPR: Epoch 1 of 2000. Elapsed time 0.01 sec
+MF_BPR: Processed 7000 (100.0%) in 0.24 sec. MSE loss 1.96E-03. Sample per second: 28871
+MF_BPR: Epoch 2 of 2000. Elapsed time 0.02 sec
+MF_BPR: Processed 7000 (100.0%) in 0.25 sec. MSE loss 2.06E-03. Sample per second: 28248
+MF_BPR: Epoch 3 of 2000. Elapsed time 0.02 sec
+MF_BPR: Processed 7000 (100.0%) in 0.25 sec. MSE loss 1.99E-03. Sample per second: 27662
+MF_BPR: Epoch 4 of 2000. Elapsed time 0.03 sec
+MF_BPR: Processed 7000 (100.0%) in 0.26 sec. MSE loss 2.02E-03. Sample per second: 27094
+MF_BPR: Validation begins...
