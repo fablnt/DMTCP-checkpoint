@@ -46,7 +46,7 @@ where the additional arguments can be:
 
 After checkpointing, the program will continue running and checkpointing again after the time specified with ```-i```.
 
-> NOTE
+> [!NOTE]
 > The coordinator port is set automatically.
 
 When a program is launched with ```start``` for the first time, a directory named ```id_scriptName_pythonArguments``` will be created containing the following files:
