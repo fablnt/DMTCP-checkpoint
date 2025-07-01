@@ -37,7 +37,7 @@ Notice that, for each program launched with the `checkpoint.sh` script, a separa
 To run a program
 
 ```
-./checpoint.sh start <additional arguments> fileName.py <python arguments>
+./checkpoint.sh start <additional arguments> fileName.py <python arguments>
 ```
 where the additional arguments can be:
 - ```-id``` : tag to identify different process executing the same python file.
@@ -55,7 +55,7 @@ When a program is launched with ```start``` for the first time, a directory name
 - ```coordinator.log```: contains the coordaintor output.
 - ```dmtcp.config```: contains the DMTCP configuration set.
 
-If a program is launched with ```start```, but a directory with that name already exists, the program will not start. (We assume that a checkpoint already exists, so restart shoul be used instead).
+If a program is launched with ```start```, but a directory with that name already exists, the program will not start. (We assume that a checkpoint already exists, so restart should be used instead).
 
 
 ### Resuming a program
