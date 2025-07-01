@@ -21,44 +21,51 @@ Clone this repository:
 ```bash
 git clone https://github.com/fablnt/DMTCP-checkpoint.git
 ```
-### 3. setup (to do)
- Absolute path to dmtcp
-
-## Usage (adapt to dmtcp)
-The `checkpoint.sh` script handles the execution of checkpoint and restore operations with DMTCP in a simplified manner. Before executing any of the below commands, source the `bashrc` file with
-
+### 3. Script setup 
+Open the file ```checkpoint.sh``` and set the variable ```DMTCP_EXEC``` to the absolute path of the dmtcp executables, e.g.
+```bash
+DMTCP_EXEC="/leonardo/home/userexternal/$USER/dmtcp/bin/
 ```
-source bashrc
-```
+ 
+## Usage 
+The `checkpoint.sh` script handles the execution of checkpoint and restore operations with DMTCP in a simplified manner. 
+
+
 Notice that, for each program launched with the `checkpoint.sh` script, a separated coordinator process will be started and attached to the program. 
 
 ### Starting a program
 To run a program
 
 ```
-start <additional arguments> fileName.py <python arguments>
+./checpoint.sh start <additional arguments> fileName.py <python arguments>
 ```
 where the additional arguments can be:
 - ```-id``` : tag to identify different process executing the same python file.
 - ```-i```: specify time in seconds after which the program will checkpoint its state.
 
+
 After checkpointing, the program will continue running and checkpointing again after the time specified with ```-i```.
 
-When a program is launched with ```start``` for the first time, a directory will be created containing the following files:
-- application.log
-- execution.log
-- coordinator.log
+> NOTE
+> The coordinator port is set automatically.
 
-If a program is launched with ```start```, but a directory with that name already exists, the program will not start. 
+When a program is launched with ```start``` for the first time, a directory named ```id_scriptName_pythonArguments``` will be created containing the following files:
+- ```application.log```: contains the program output.
+- ```execution.log```: contains various information about the program and its execution.
+- ```coordinator.log```: contains the coordaintor output.
+- ```dmtcp.config```: contains the dmtcp configuration set.
+
+If a program is launched with ```start```, but a directory with that name already exists, the program will not start. (We assume that a checkpoint already exists, so restart shoul be used instead).
 
 
 ### Resuming a program
 To resume a checkpointed program
 
 ```
-resume -id <id> fileName.py 
+./checkpoint.sh restart -id <id> -i <time> fileName.py <python arguments>
 ```
 ```-id``` must be included if previously specified in the start command. Additionally, the ```-i``` flags can be used equivalently as in the start command.
+Please note that the python arguments must be the same used in the start command used to run the program for the first time. 
 
 
 
