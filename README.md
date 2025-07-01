@@ -74,8 +74,8 @@ Please note that the python arguments must be the same used in the start command
 This repository contains:
 
 - ```checkpoint.sh```: the checkpoint/restore script.
-- ```src```: contains the files used to run the tests, with additional debugging information. See the READ.me file.
-- ```Results```: contains the results of the previous tests performed on the Leonardo cluster of CINECA. Additional information can be found in 
+- ```src```: contains the files used to run the tests, with additional debugging information.
+- ```results```: contains the results of the previous tests performed on the Leonardo cluster of CINECA. Additional information can be found in [results/README.md](https://github.com/fablnt/DMTCP-checkpoint/blob/master/results/README.md)
 
 
 ## Limitations
