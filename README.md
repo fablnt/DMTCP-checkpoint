@@ -26,9 +26,14 @@ Open the file ```checkpoint.sh``` and set the variable ```DMTCP_EXEC``` to the a
 ```bash
 DMTCP_EXEC="/leonardo/home/userexternal/$USER/dmtcp/bin/
 ```
- 
+
+It may be necessary to make ```checkpoint.sh``` executable with 
+ ```bash
+chmod +x /path_to_file/checkpoint.sh
+```
+
 ## Usage 
-The `checkpoint.sh` script handles the execution of checkpoint and restore operations with DMTCP in a simplified manner. 
+The `checkpoint.sh` script handles the execution of checkpoint and restore operations with DMTCP in a simplified manner, printing output both in the I/O stream and in log files. 
 
 
 Notice that, for each program launched with the `checkpoint.sh` script, a separated coordinator process will be started and attached to the program. 
@@ -44,7 +49,9 @@ where the additional arguments can be:
 - ```-i```: specify time in seconds after which the program will checkpoint its state.
 
 
-After checkpointing, the program will continue running and checkpointing again after the time specified with ```-i```.
+After checkpointing, the program will terminate its execution. To avoid that, you need to remove the flag ```--kill-after-ckpt``` at lines .
+
+
 
 > [!NOTE]
 > The coordinator port is set automatically.
@@ -82,6 +89,5 @@ This repository contains:
 The DMTCP tool presents some limitations:
 
 1) The tool does not checkpoint applications and libraries that work with GPUs (e.g. torch).
-2) Some libraries compiled with Cython have conflicts with dmtcp.
-3) We did not manage to test the checkpoint/restore mechanism on the cluster due to the limited execution time of the models we experimented with.
+2) Some libraries conflicts with dmtcp, resulting in a stalling in the program without reporting any particular error.
 4) The DMTCP developers suggest to use the [MANA](https://mana-doc.readthedocs.io/en/latest/) plugin to handle MPI workloads, but we did not manage to install it on Leonardo. 
