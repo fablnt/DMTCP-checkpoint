@@ -75,7 +75,7 @@ Please note that the python arguments must be the same used in the start command
 
 >[!IMPORTANT]
 > The program execution is interrupted after a checkpoint is being performed. This option can be disabled by removing the flag ```--kill-after-ckpt``` in the ```checkpoint.sh``` at lines
->
+>[65](https://github.com/fablnt/DMTCP-checkpoint/blob/fd760b676d6f5ab8be89e17e41604920424e7aaf/checkpoint.sh#L65) and [130](https://github.com/fablnt/DMTCP-checkpoint/blob/fd760b676d6f5ab8be89e17e41604920424e7aaf/checkpoint.sh#L130)
 
 
 ## Project structure
