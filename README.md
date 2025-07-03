@@ -90,5 +90,5 @@ This repository contains:
 The DMTCP tool presents some limitations:
 
 1) The tool does not checkpoint applications and libraries that work with GPUs (e.g. torch).
-2) Some libraries conflicts with dmtcp, resulting in a stalling in the program without reporting any particular error.
+2) Some libraries conflicts with dmtcp resulting in a stalling in the program without reporting any particular error.
 4) The DMTCP developers suggest to use the [MANA](https://mana-doc.readthedocs.io/en/latest/) plugin to handle MPI workloads, but we did not manage to install it on Leonardo. 
