@@ -16,7 +16,7 @@ cd dmtcp
 make
 # No need to run 'make install'
 ```
-### 2. Clone this repository (to do)
+### 2. Clone this repository 
 Clone this repository:
 ```bash
 git clone https://github.com/fablnt/DMTCP-checkpoint.git
@@ -46,11 +46,7 @@ To run a program
 ```
 where the additional arguments can be:
 - ```-id``` : tag to identify different process executing the same python file.
-- ```-i```: specify time in seconds after which the program will checkpoint its state.
-
-
-After checkpointing, the program will terminate its execution. To avoid that, you need to remove the flag ```--kill-after-ckpt``` at lines .
-
+- ```-i```: specify time in seconds after which the program will checkpoint its state (default is 20s).
 
 
 > [!NOTE]
@@ -71,10 +67,15 @@ To resume a checkpointed program
 ```
 ./checkpoint.sh restart -id <id> -i <time> fileName.py <python arguments>
 ```
+The resumed program will checkpoint its state after ```<time>``` seconds, as it does in the start command.
+
+
 ```-id``` must be included if previously specified in the start command. Additionally, the ```-i``` flags can be used equivalently as in the start command.
 Please note that the python arguments must be the same used in the start command used to run the program for the first time. 
 
-
+>[!IMPORTANT]
+> The program execution is interrupted after a checkpoint is being performed. This option can be disabled by removing the flag ```--kill-after-ckpt``` in the ```checkpoint.sh``` at lines
+>
 
 
 ## Project structure
