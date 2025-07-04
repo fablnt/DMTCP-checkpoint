@@ -52,7 +52,7 @@ where the additional arguments can be:
 > [!NOTE]
 > The coordinator port is set automatically.
 
-When a program is launched with ```start``` for the first time, a directory named ```id_scriptName_pythonArguments``` will be created containing the following files:
+When a program is launched with ```start``` for the first time, a directory named ```output_id_scriptName_pythonArguments``` will be created containing the following files:
 - ```application.log```: contains the program output.
 - ```execution.log```: contains various information about the program and its execution.
 - ```coordinator.log```: contains the coordaintor output.
