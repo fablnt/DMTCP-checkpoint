@@ -34,7 +34,7 @@ chmod +x /path_to_file/checkpoint.sh
 
 ## Usage 
 The `checkpoint.sh` script handles the execution of checkpoint and restore operations with DMTCP in a simplified manner, printing output both in the I/O stream and in log files. 
-
+The script must be launched in the same directory as the python file, using the relative or absolute path to checkpoint.sh, and the output directory will be created in the same location.
 
 Notice that, for each program launched with the `checkpoint.sh` script, a separated coordinator process will be started and attached to the program. 
 
