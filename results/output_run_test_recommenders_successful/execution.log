@@ -1,0 +1,34 @@
+Tue Jul  8 16:40:58 CEST 2025: Setting up for run_test_recommenders
+Tue Jul  8 16:40:58 CEST 2025: Checkpoint directory: ./output_run_test_recommenders_test6
+Tue Jul  8 16:40:58 CEST 2025: Application output will be written to: ./output_run_test_recommenders_test6/application_output.log
+Tue Jul  8 16:40:58 CEST 2025: Assigned coordinator port: 34886
+Tue Jul  8 16:40:58 CEST 2025: Started coordinator with PID: 2093576
+Starting run_test_recommenders with DMTCP
+Checkpoints: ./output_run_test_recommenders_test6
+Script logs: ./output_run_test_recommenders_test6/execution.log
+Application output: ./output_run_test_recommenders_test6/application_output.log
+Tue Jul  8 16:40:58 CEST 2025: Launching dmtcp_launch for run_test_recommenders.py
+Tue Jul  8 16:41:18 CEST 2025: Setting up for run_test_recommenders
+Tue Jul  8 16:41:18 CEST 2025: Checkpoint directory: ./output_run_test_recommenders_test6
+Tue Jul  8 16:41:18 CEST 2025: Application output will be written to: ./output_run_test_recommenders_test6/application_output.log
+Restarting from checkpoint: dmtcp_restart_script.sh
+Application output: ./output_run_test_recommenders_test6/application_output.log
+Tue Jul  8 16:41:18 CEST 2025: Assigned coordinator port: 33949
+Tue Jul  8 16:41:18 CEST 2025: Started coordinator with PID: 2115473
+Tue Jul  8 16:41:18 CEST 2025: Launching dmtcp_restart for ./output_run_test_recommenders_test6/dmtcp_restart_script.sh
+Tue Jul  8 16:41:52 CEST 2025: Setting up for run_test_recommenders
+Tue Jul  8 16:41:52 CEST 2025: Checkpoint directory: ./output_run_test_recommenders_test6
+Tue Jul  8 16:41:52 CEST 2025: Application output will be written to: ./output_run_test_recommenders_test6/application_output.log
+Restarting from checkpoint: dmtcp_restart_script.sh
+Application output: ./output_run_test_recommenders_test6/application_output.log
+Tue Jul  8 16:41:52 CEST 2025: Assigned coordinator port: 21475
+Tue Jul  8 16:41:52 CEST 2025: Started coordinator with PID: 2143118
+Tue Jul  8 16:41:52 CEST 2025: Launching dmtcp_restart for ./output_run_test_recommenders_test6/dmtcp_restart_script.sh
+Tue Jul  8 16:43:13 CEST 2025: Setting up for run_test_recommenders
+Tue Jul  8 16:43:13 CEST 2025: Checkpoint directory: ./output_run_test_recommenders_test6
+Tue Jul  8 16:43:13 CEST 2025: Application output will be written to: ./output_run_test_recommenders_test6/application_output.log
+Restarting from checkpoint: dmtcp_restart_script.sh
+Application output: ./output_run_test_recommenders_test6/application_output.log
+Tue Jul  8 16:43:13 CEST 2025: Assigned coordinator port: 10529
+Tue Jul  8 16:43:13 CEST 2025: Started coordinator with PID: 2242702
+Tue Jul  8 16:43:13 CEST 2025: Launching dmtcp_restart for ./output_run_test_recommenders_test6/dmtcp_restart_script.sh

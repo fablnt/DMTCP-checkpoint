@@ -1,0 +1,18 @@
+Tue Jul  8 16:08:27 CEST 2025: Setting up for test0
+Tue Jul  8 16:08:27 CEST 2025: Checkpoint directory: ./output_test0_prova3
+Tue Jul  8 16:08:27 CEST 2025: Application output will be written to: ./output_test0_prova3/application_output.log
+Tue Jul  8 16:08:27 CEST 2025: Assigned coordinator port: 9409
+Tue Jul  8 16:08:27 CEST 2025: Started coordinator with PID: 2402138
+Starting test0 with DMTCP
+Checkpoints: ./output_test0_prova3
+Script logs: ./output_test0_prova3/execution.log
+Application output: ./output_test0_prova3/application_output.log
+Tue Jul  8 16:08:27 CEST 2025: Launching dmtcp_launch for test0.py
+Tue Jul  8 16:11:36 CEST 2025: Setting up for test0
+Tue Jul  8 16:11:36 CEST 2025: Checkpoint directory: ./output_test0_prova3
+Tue Jul  8 16:11:36 CEST 2025: Application output will be written to: ./output_test0_prova3/application_output.log
+Restarting from checkpoint: dmtcp_restart_script.sh
+Application output: ./output_test0_prova3/application_output.log
+Tue Jul  8 16:11:36 CEST 2025: Assigned coordinator port: 11260
+Tue Jul  8 16:11:36 CEST 2025: Started coordinator with PID: 2402491
+Tue Jul  8 16:11:36 CEST 2025: Launching dmtcp_restart for ./output_test0_prova3/dmtcp_restart_script.sh

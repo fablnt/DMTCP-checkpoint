@@ -1,0 +1,3 @@
+COORD_PORT=19580
+CHECKPOINT_DIR=./output_run_test_recommenders_prova4
+PROGRAM=run_test_recommenders.py

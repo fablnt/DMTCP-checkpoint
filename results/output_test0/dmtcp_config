@@ -1,0 +1,3 @@
+COORD_PORT=9409
+CHECKPOINT_DIR=./output_test0_prova3
+PROGRAM=test0.py

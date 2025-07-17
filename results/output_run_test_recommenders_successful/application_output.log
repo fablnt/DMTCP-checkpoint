@@ -1,0 +1,95 @@
+>>> Script started
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> Starting imports...
+>>> Imported BaseCBFRecommender
+>>> Imported Evaluator
+>>> Imported Movielens20MReader
+>>> Imported DataSplitter_leave_k_out
+>>> Imported Incremental_Training_Early_Stopping
+Importing Non-Personalized Recommenders...
+Non-Personalized Recommenders imported successfully.
+Importing UserKNN CF...
+UserKNN CF imported.
+Importing ItemKNN CF...
+ItemKNN CF imported.
+Importing NegHOSLIM Recommenders...
+NegHOSLIM Recommenders imported.
+Importing SLIM BPR Cython...
+SLIM BPR Cython imported.
+Importing SLIM ElasticNet...
+SLIM ElasticNet imported.
+Importing P3alpha...
+P3alpha imported.
+Importing RP3beta...
+RP3beta imported.
+Importing GraphFilterCF...
+GraphFilterCF imported.
+Importing ItemRank Recommenders...
+ItemRank Recommenders imported.
+Importing Matrix Factorization (Cython)...
+Matrix Factorization (Cython) imported.
+Importing PureSVD...
+PureSVD imported.
+Importing IALS Recommender...
+IALS Recommender imported.
+Importing NMF Recommender...
+NMF Recommender imported.
+Importing EASE_R...
+EASE_R imported.
+Importing MultVAE...
+Tensorflow is not available
+MultVAE imported.
+Importing ItemKNNCBF...
+ItemKNNCBF imported.
+Importing UserKNNCBF...
+UserKNNCBF imported.
+Importing ItemKNN CFCBF Hybrid...
+ItemKNN CFCBF Hybrid imported.
+Importing UserKNN CFCBF Hybrid...
+UserKNN CFCBF Hybrid imported.
+>>> Imported Recommender_import_list
+ending imports
+>>> entering __main__
+>>> inside main()
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> PID = 40000
+>>> Parent PID = 2093595
+>>> ENV PATH = /leonardo/home/userexternal/agrassi1/RecSysFramework_public/.condaenv/bin:/leonardo/home/userexternal/agrassi1/.local/bin:/leonardo/home/userexternal/agrassi1/bin:/cineca/bin:/leonardo/prod/opt/tools/cintools/1.0/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+>>> ENV LD_PRELOAD = 
+>>> Starting at 2025-07-08 16:41:02
+DataSplitter_leave_k_out: Cold users not allowed
+DataSplitter_leave_k_out: Verifying data consistency...
+DataSplitter_leave_k_out: Verifying data consistency... Passed!
+DataSplitter_leave_k_out: DataReader: Movielens20M
+	Num items: 27278
+	Num users: 138493
+	Train 		interactions 19446291, 	density 5.15E-03
+	Validation 	interactions 276986, 	density 7.33E-05
+	Test 		interactions 276986, 	density 7.33E-05
+
+
+
+	ICM name: ICM_genres, Num features: 20, feature occurrences: 54406, density 9.97E-02
+	ICM name: ICM_year, Num features: 1, feature occurrences: 27049, density 9.92E-01
+	ICM name: ICM_all, Num features: 20330, feature occurrences: 349292, density 6.30E-04
+	ICM name: ICM_tags, Num features: 20310, feature occurrences: 294886, density 5.32E-04
+
+
+DataSplitter_leave_k_out: Done.
+P3alphaRecommender: URM Detected 558 ( 2.0%) items with no interactions.
+P3alphaRecommender: Similarity column 27278 (100.0%), 785.40 column/sec. Elapsed time 34.73 sec
+EvaluatorHoldout: Processed 138493 (100.0%) in 55.25 sec. Users per second: 2507
+EvaluatorNegativeItemSample: Processed 138493 (100.0%) in 1.55 min. Users per second: 1491
+P3alphaRecommender: Saving model in file './result_experiments/__temp_model/P3alphaRecommender/temp_model'
+P3alphaRecommender: Saving complete
+P3alphaRecommender: URM Detected 558 ( 2.0%) items with no interactions.
+P3alphaRecommender: Loading model from file './result_experiments/__temp_model/P3alphaRecommender/temp_model'
+P3alphaRecommender: Loading complete
+EvaluatorHoldout: Processed 138493 (100.0%) in 1.60 min. Users per second: 1439
+CUTOFF: 5 - PRECISION: 0.0361101, PRECISION_RECALL_MIN_DEN: 0.0902753, RECALL: 0.0902753, MAP: 0.0208319, MAP_MIN_DEN: 0.0520798, MRR: 0.0912162, NDCG: 0.0709619, F1: 0.0515859, HIT_RATE: 0.1595532, ARHR_ALL_HITS: 0.0976878, NOVELTY: 0.0016921, AVERAGE_POPULARITY: 0.5658258, DIVERSITY_MEAN_INTER_LIST: 0.8086892, DIVERSITY_HERFINDAHL: 0.9617367, COVERAGE_ITEM: 0.0696532, COVERAGE_ITEM_HIT: 0.0223623, ITEMS_IN_GT: 0.3265635, COVERAGE_USER: 1.0000000, COVERAGE_USER_HIT: 0.1595532, USERS_IN_GT: 1.0000000, DIVERSITY_GINI: 0.0026640, SHANNON_ENTROPY: 5.9256701, RATIO_DIVERSITY_HERFINDAHL: 0.9623746, RATIO_DIVERSITY_GINI: 0.0277269, RATIO_SHANNON_ENTROPY: 0.5107701, RATIO_AVERAGE_POPULARITY: 2.1545748, RATIO_NOVELTY: 0.0283347, 
+
+CUTOFF: 5 - PRECISION: 0.0361101, PRECISION_RECALL_MIN_DEN: 0.0902753, RECALL: 0.0902753, MAP: 0.0208319, MAP_MIN_DEN: 0.0520798, MRR: 0.0912162, NDCG: 0.0709619, F1: 0.0515859, HIT_RATE: 0.1595532, ARHR_ALL_HITS: 0.0976878, NOVELTY: 0.0016921, AVERAGE_POPULARITY: 0.5658258, DIVERSITY_MEAN_INTER_LIST: 0.8086892, DIVERSITY_HERFINDAHL: 0.9617367, COVERAGE_ITEM: 0.0696532, COVERAGE_ITEM_HIT: 0.0223623, ITEMS_IN_GT: 0.3265635, COVERAGE_USER: 1.0000000, COVERAGE_USER_HIT: 0.1595532, USERS_IN_GT: 1.0000000, DIVERSITY_GINI: 0.0026640, SHANNON_ENTROPY: 5.9256701, RATIO_DIVERSITY_HERFINDAHL: 0.9623746, RATIO_DIVERSITY_GINI: 0.0277269, RATIO_SHANNON_ENTROPY: 0.5107701, RATIO_AVERAGE_POPULARITY: 2.1545748, RATIO_NOVELTY: 0.0283347, 
+
+>>> Script finished

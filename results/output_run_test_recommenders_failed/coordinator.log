@@ -1,0 +1,42 @@
+dmtcp_coordinator starting...
+    Host: lrdn3332.leonardo.local (10.10.0.92)
+    Port: 19580
+    Checkpoint Interval: 60
+    Exit on last client: 1
+Type '?' for help.
+
+[0m
+[0;32m[2025-07-08T16:14:42.309, 4121244, 4121244, Note] at coordinatorplugin.h:205 in tick; REASON='No active clients; starting stale timeout; (theStaleTimeout = 28800);[0m
+dmtcp> [0;32m[2025-07-08T16:14:42.333, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:837 in initializeComputation; REASON='Resetting computation;[0m
+[0;32m[2025-07-08T16:14:42.333, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:942 in onConnect; REASON='worker connected; (hello_remote.from = 636e35743c6ca21c-4121256-6d0f36dcb1d22); (client->progname() = python3);[0m
+[0;32m[2025-07-08T16:14:42.333, 4121244, 4121244, Note] at coordinatorplugin.h:81 in resetCkptTimer; REASON='Time before next ckpt; (theCheckpointInterval = 60);[0m
+dmtcp> [0;32m[2025-07-08T16:14:42.405, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:718 in onData; REASON='Updating process Information after exec(); (progname = python3.8); (msg.from = 636e35743c6ca21c-40000-6d0f36fbdac36); (client->identity() = 636e35743c6ca21c-4121256-6d0f36dcb1d22);[0m
+dmtcp> [0;32m[2025-07-08T16:14:42.638, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:942 in onConnect; REASON='worker connected; (hello_remote.from = 636e35743c6ca21c-40000-6d0f36fbdac36); (client->progname() = python3.8_(forked));[0m
+dmtcp> [0;32m[2025-07-08T16:14:42.639, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:709 in onData; REASON='Updating process Information after fork(); (client->hostname() = lrdn3332.leonardo.local); (client->progname() = python3.8_(forked)); (msg.from = 636e35743c6ca21c-41000-6d0f380115f8c); (client->identity() = 636e35743c6ca21c-40000-6d0f36fbdac36);[0m
+dmtcp> [0;32m[2025-07-08T16:14:42.648, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:718 in onData; REASON='Updating process Information after exec(); (progname = uname); (msg.from = 636e35743c6ca21c-41000-6d0f380115f8c); (client->identity() = 636e35743c6ca21c-41000-6d0f380115f8c);[0m
+[0;32m[2025-07-08T16:14:42.648, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:801 in onDisconnect; REASON='client disconnected; (client->identity() = 636e35743c6ca21c-41000-6d0f380115f8c); (client->progname() = uname);[0m
+dmtcp> [0;32m[2025-07-08T16:15:42.709, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:1205 in startCheckpoint; REASON='starting checkpoint; incrementing generation; suspending all nodes; (s.numPeers = 1); (compId.computationGeneration() = 1);[0m
+dmtcp> dmtcp> dmtcp> dmtcp> dmtcp> dmtcp> [0;32m[2025-07-08T16:16:00.443, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:528 in releaseBarrier; REASON='Checkpoint complete; all workers running;[0m
+dmtcp> [0;32m[2025-07-08T16:16:00.527, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:591 in recordCkptFilename; REASON='Checkpoint complete. Wrote restart script; (restartScriptPath = ./output_run_test_recommenders_prova4/dmtcp_restart_script_636e35743c6ca21c-40000-6d0f36dcb1d22.sh);[0m
+dmtcp> [0;32m[2025-07-08T16:16:00.531, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:801 in onDisconnect; REASON='client disconnected; (client->identity() = 636e35743c6ca21c-40000-6d0f36fbdac36); (client->progname() = python3.8);[0m
+[0;32m[2025-07-08T16:16:00.531, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:807 in onDisconnect; REASON='last client exited, shutting down..;[0m
+[0;32m[2025-07-08T16:16:00.531, 4121244, 4121244, Note] at dmtcp_coordinator.cpp:373 in handleUserCommand; REASON='killing all connected peers and quitting ...;[0m
+DMTCP coordinator exiting... (per request)
+[0m
+dmtcp_coordinator starting...
+    Host: lrdn3301.leonardo.local (10.10.0.61)
+    Port: 38968
+    Checkpoint Interval: 60
+    Exit on last client: 1
+Type '?' for help.
+
+[0m
+[0;32m[2025-07-08T16:38:11.976, 2404220, 2404220, Note] at coordinatorplugin.h:205 in tick; REASON='No active clients; starting stale timeout; (theStaleTimeout = 28800);[0m
+dmtcp> [0;32m[2025-07-08T16:38:12.066, 2404220, 2404220, Note] at dmtcp_coordinator.cpp:837 in initializeComputation; REASON='Resetting computation;[0m
+[0;32m[2025-07-08T16:38:12.066, 2404220, 2404220, Note] at dmtcp_coordinator.cpp:1023 in validateRestartingWorkerProcess; REASON='FIRST restart connection. Set numRestartPeers. Generate timestamp; (numRestartPeers = 1); (curTimeStamp = 1323270538830166); (compId = 636e35743c6ca21c-40000-6d0f36dcb1d22);[0m
+[0;32m[2025-07-08T16:38:12.066, 2404220, 2404220, Note] at dmtcp_coordinator.cpp:942 in onConnect; REASON='worker connected; (hello_remote.from = 636e35743c6ca21c-40000-6d0f36fbdac36); (client->progname() = python3.8);[0m
+dmtcp> dmtcp> dmtcp> [0;32m[2025-07-08T16:38:21.160, 2404220, 2404220, Note] at dmtcp_coordinator.cpp:801 in onDisconnect; REASON='client disconnected; (client->identity() = 636e35743c6ca21c-40000-6d0f36fbdac36); (client->progname() = python3.8);[0m
+[0;32m[2025-07-08T16:38:21.160, 2404220, 2404220, Note] at dmtcp_coordinator.cpp:807 in onDisconnect; REASON='last client exited, shutting down..;[0m
+[0;32m[2025-07-08T16:38:21.160, 2404220, 2404220, Note] at dmtcp_coordinator.cpp:373 in handleUserCommand; REASON='killing all connected peers and quitting ...;[0m
+DMTCP coordinator exiting... (per request)
+[0m

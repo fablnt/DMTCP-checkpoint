@@ -1,8 +1,0 @@
-dmtcp_coordinator starting...
-    Host: lrdn3399.leonardo.local (10.10.0.159)
-    Port: 7777
-    Checkpoint Interval: disabled (checkpoint manually instead)
-    Exit on last client: 0
-Backgrounding...
-[0m
-slurmstepd: error: *** JOB 17123303 ON lrdn3399 CANCELLED AT 2025-06-29T11:45:38 DUE TO TIME LIMIT ***

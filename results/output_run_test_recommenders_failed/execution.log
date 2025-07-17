@@ -1,0 +1,18 @@
+Tue Jul  8 16:14:42 CEST 2025: Setting up for run_test_recommenders
+Tue Jul  8 16:14:42 CEST 2025: Checkpoint directory: ./output_run_test_recommenders_prova4
+Tue Jul  8 16:14:42 CEST 2025: Application output will be written to: ./output_run_test_recommenders_prova4/application_output.log
+Tue Jul  8 16:14:42 CEST 2025: Assigned coordinator port: 19580
+Tue Jul  8 16:14:42 CEST 2025: Started coordinator with PID: 4121244
+Starting run_test_recommenders with DMTCP
+Checkpoints: ./output_run_test_recommenders_prova4
+Script logs: ./output_run_test_recommenders_prova4/execution.log
+Application output: ./output_run_test_recommenders_prova4/application_output.log
+Tue Jul  8 16:14:42 CEST 2025: Launching dmtcp_launch for run_test_recommenders.py
+Tue Jul  8 16:38:11 CEST 2025: Setting up for run_test_recommenders
+Tue Jul  8 16:38:11 CEST 2025: Checkpoint directory: ./output_run_test_recommenders_prova4
+Tue Jul  8 16:38:11 CEST 2025: Application output will be written to: ./output_run_test_recommenders_prova4/application_output.log
+Restarting from checkpoint: dmtcp_restart_script.sh
+Application output: ./output_run_test_recommenders_prova4/application_output.log
+Tue Jul  8 16:38:11 CEST 2025: Assigned coordinator port: 38968
+Tue Jul  8 16:38:11 CEST 2025: Started coordinator with PID: 2404220
+Tue Jul  8 16:38:11 CEST 2025: Launching dmtcp_restart for ./output_run_test_recommenders_prova4/dmtcp_restart_script.sh

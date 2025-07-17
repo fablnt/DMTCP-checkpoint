@@ -1,0 +1,82 @@
+>>> Script started
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> Starting imports...
+>>> Imported BaseCBFRecommender
+>>> Imported Evaluator
+>>> Imported Movielens20MReader
+>>> Imported DataSplitter_leave_k_out
+>>> Imported Incremental_Training_Early_Stopping
+Importing Non-Personalized Recommenders...
+Non-Personalized Recommenders imported successfully.
+Importing UserKNN CF...
+UserKNN CF imported.
+Importing ItemKNN CF...
+ItemKNN CF imported.
+Importing NegHOSLIM Recommenders...
+NegHOSLIM Recommenders imported.
+Importing SLIM BPR Cython...
+SLIM BPR Cython imported.
+Importing SLIM ElasticNet...
+SLIM ElasticNet imported.
+Importing P3alpha...
+P3alpha imported.
+Importing RP3beta...
+RP3beta imported.
+Importing GraphFilterCF...
+GraphFilterCF imported.
+Importing ItemRank Recommenders...
+ItemRank Recommenders imported.
+Importing Matrix Factorization (Cython)...
+Matrix Factorization (Cython) imported.
+Importing PureSVD...
+PureSVD imported.
+Importing IALS Recommender...
+IALS Recommender imported.
+Importing NMF Recommender...
+NMF Recommender imported.
+Importing EASE_R...
+EASE_R imported.
+Importing MultVAE...
+Tensorflow is not available
+MultVAE imported.
+Importing ItemKNNCBF...
+ItemKNNCBF imported.
+Importing UserKNNCBF...
+UserKNNCBF imported.
+Importing ItemKNN CFCBF Hybrid...
+ItemKNN CFCBF Hybrid imported.
+Importing UserKNN CFCBF Hybrid...
+UserKNN CFCBF Hybrid imported.
+>>> Imported Recommender_import_list
+ending imports
+>>> entering __main__
+>>> inside main()
+>>> __name__ = __main__
+>>> sys.argv[0] = run_test_recommenders.py
+>>> PID = 40000
+>>> Parent PID = 4121255
+>>> ENV PATH = /leonardo/home/userexternal/agrassi1/RecSysFramework_public/.condaenv/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/python-3.10.8-c7fmxco5bavqi3ye7hrbaxpjpwv6dcxd/bin:/leonardo/home/userexternal/agrassi1/.local/bin:/leonardo/home/userexternal/agrassi1/bin:/cineca/bin:/leonardo/prod/opt/tools/cintools/1.0/none/bin:/leonardo/prod/spack/03/install/0.19/linux-rhel8-icelake/gcc-8.5.0/environment-modules-5.2.0-rz47odw4phlhzhhbz7b65nv5s5othgmi/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin
+>>> ENV LD_PRELOAD = 
+>>> Starting at 2025-07-08 16:14:45
+DataSplitter_leave_k_out: Cold users not allowed
+DataSplitter_leave_k_out: Verifying data consistency...
+DataSplitter_leave_k_out: Verifying data consistency... Passed!
+DataSplitter_leave_k_out: DataReader: Movielens20M
+	Num items: 27278
+	Num users: 138493
+	Train 		interactions 19446291, 	density 5.15E-03
+	Validation 	interactions 276986, 	density 7.33E-05
+	Test 		interactions 276986, 	density 7.33E-05
+
+
+
+	ICM name: ICM_genres, Num features: 20, feature occurrences: 54406, density 9.97E-02
+	ICM name: ICM_year, Num features: 1, feature occurrences: 27049, density 9.92E-01
+	ICM name: ICM_all, Num features: 20330, feature occurrences: 349292, density 6.30E-04
+	ICM name: ICM_tags, Num features: 20310, feature occurrences: 294886, density 5.32E-04
+
+
+DataSplitter_leave_k_out: Done.
+P3alphaRecommender: URM Detected 558 ( 2.0%) items with no interactions.
+P3alphaRecommender: Similarity column 27278 (100.0%), 811.47 column/sec. Elapsed time 33.62 sec
