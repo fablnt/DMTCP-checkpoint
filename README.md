@@ -22,7 +22,7 @@ Clone this repository:
 git clone https://github.com/fablnt/DMTCP-checkpoint.git
 ```
 ### 3. Script setup 
-Open the file ```checkpoint.sh``` and set the variable ```DMTCP_EXEC``` to the absolute path of the dmtcp executables, e.g.
+Open the file ```checkpoint.sh``` and set the variable ```DMTCP_EXEC``` to the absolute path of the DMTCP executables, e.g.
 ```bash
 DMTCP_EXEC="/leonardo/home/userexternal/$USER/dmtcp/bin/
 ```
@@ -71,10 +71,10 @@ The resumed program will checkpoint its state after ```<time>``` seconds, as it 
 
 
 ```-id``` must be included if previously specified in the start command. Additionally, the ```-i``` flags can be used equivalently as in the start command.
-Please note that the python arguments must be the same used in the start command used to run the program for the first time. 
+Please note that the python arguments must be the same as those used in the start command used to run the program for the first time. 
 
 >[!IMPORTANT]
-> The program execution is interrupted after a checkpoint is being performed. This option can be disabled by removing the flag ```--kill-after-ckpt``` in the ```checkpoint.sh``` at lines
+> The program execution is interrupted after a checkpoint has been performed. This option can be disabled by removing the flag ```--kill-after-ckpt``` in the ```checkpoint.sh``` at lines
 >[65](https://github.com/fablnt/DMTCP-checkpoint/blob/fd760b676d6f5ab8be89e17e41604920424e7aaf/checkpoint.sh#L65) and [130](https://github.com/fablnt/DMTCP-checkpoint/blob/fd760b676d6f5ab8be89e17e41604920424e7aaf/checkpoint.sh#L130)
 
 
@@ -90,7 +90,7 @@ This repository contains:
 The DMTCP tool has some limitations:
 
 1) The tool does not checkpoint applications and libraries that work with GPUs (e.g. torch).
-2) Some libraries conflicts with dmtcp resulting in a stalling in the program without reporting any particular error.
+2) Some libraries conflict with dmtcp the program to stall without reporting any particular error.
 3) The DMTCP developers suggest to use the [MANA](https://mana-doc.readthedocs.io/en/latest/) plugin to handle MPI workloads, but we did not manage to install it on Leonardo.
 4) The checkpoint/restart mechanism works correctly for simple programs and when checkpointing occurs during import of non-problematic libraries. However, it has been observed that the mechanism fails when programs get checkpointed during training. These behaviours are reported in the results folder.
 5)The Multiprocessing package of python causes conflicts with DMTCP. 
