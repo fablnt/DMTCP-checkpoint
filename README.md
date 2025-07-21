@@ -1,5 +1,5 @@
 # Checkpoint/Restore with DMTCP
-DMTCP (Distributed MultiThreaded Checkpointing) is a tool to transparently checkpoint and restore single host or distributed computation in user-space. The checkpoint/restore mechanism is implemented on a library lever (semi-transparent), meaning one can only dump applications known to run successfully with the DMTCP libraries, but the latter does not provide proxies for all kernel APIs. Additionally, application performance may be affected due to the overhead introduced by the checkpoint and restore mechanism.
+DMTCP (Distributed MultiThreaded Checkpointing) is a tool to transparently checkpoint and restore single host or distributed computation in user-space. The checkpoint/restore mechanism is implemented on a library level (semi-transparent), meaning one can only dump applications known to run successfully with the DMTCP libraries, but the latter does not provide proxies for all kernel APIs. Additionally, application performance may be affected due to the overhead introduced by the checkpoint and restore mechanism.
 
 
 ## Installation
@@ -36,7 +36,7 @@ chmod +x /path_to_file/checkpoint.sh
 The `checkpoint.sh` script handles the execution of checkpoint and restore operations with DMTCP in a simplified manner, printing output both in the I/O stream and in log files. 
 The script must be launched in the same directory as the python file, using the relative or absolute path to checkpoint.sh, and the output directory will be created in the same location.
 
-Notice that, for each program launched with the `checkpoint.sh` script, a separated coordinator process will be started and attached to the program. 
+Notice that, for each program launched with the `checkpoint.sh` script, a separate coordinator process will be started and attached to the program. 
 
 ### Starting a program
 To run a program
@@ -55,7 +55,7 @@ where the additional arguments can be:
 When a program is launched with ```start``` for the first time, a directory named ```output_id_scriptName_pythonArguments``` will be created containing the following files:
 - ```application.log```: contains the program output.
 - ```execution.log```: contains various information about the program and its execution.
-- ```coordinator.log```: contains the coordaintor output.
+- ```coordinator.log```: contains the coordinator output.
 - ```dmtcp.config```: contains the DMTCP configuration set.
 
 If a program is launched with ```start```, but a directory with that name already exists, the program will not start. (We assume that a checkpoint already exists, so restart should be used instead).
@@ -87,10 +87,10 @@ This repository contains:
 
 
 ## Limitations
-The DMTCP tool presents some limitations:
+The DMTCP tool has some limitations:
 
 1) The tool does not checkpoint applications and libraries that work with GPUs (e.g. torch).
 2) Some libraries conflicts with dmtcp resulting in a stalling in the program without reporting any particular error.
 3) The DMTCP developers suggest to use the [MANA](https://mana-doc.readthedocs.io/en/latest/) plugin to handle MPI workloads, but we did not manage to install it on Leonardo.
 4) The checkpoint/restart mechanism works correctly for simple programs and when checkpointing occurs during import of non-problematic libraries. However, it has been observed that the mechanism fails when programs get checkpointed during training. These behaviours are reported in the results folder.
-5) Multiprocessing package of python causes contflicts with DMTCP. 
+5)The Multiprocessing package of python causes conflicts with DMTCP. 
